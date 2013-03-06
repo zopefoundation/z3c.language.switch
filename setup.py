@@ -59,6 +59,7 @@ setup (
             'z3c.coverage',
             'z3c.testing',
             'zope.testing',
+            'zope.app.testing',
             ],
         ),
     install_requires = [
