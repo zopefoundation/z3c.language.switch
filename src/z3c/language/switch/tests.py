@@ -17,15 +17,14 @@ $Id$
 """
 __docformat__ = 'restructuredtext'
 
+import doctest
 import unittest
-
-from zope.testing import doctestunit
 
 
 def test_suite():
     return unittest.TestSuite((
-        doctestunit.DocFileSuite('README.txt'),
-        doctestunit.DocFileSuite('app.py')
+        doctest.DocFileSuite('README.txt'),
+        doctest.DocFileSuite('app.py')
         ))
 
 if __name__=='__main__':
